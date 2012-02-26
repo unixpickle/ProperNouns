@@ -18,6 +18,9 @@
 		FAF01DD014FAAD4400148435 /* ANWord.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DCF14FAAD4400148435 /* ANWord.m */; };
 		FAF01DD314FAADDD00148435 /* ANPunctuation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DD214FAADDD00148435 /* ANPunctuation.m */; };
 		FAF01DD914FAAE0B00148435 /* ANShortWord.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DD814FAAE0B00148435 /* ANShortWord.m */; };
+		FAF01DDE14FAB33300148435 /* WordDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DDD14FAB33300148435 /* WordDictionary.m */; };
+		FAF01DE114FAB3BF00148435 /* ANSentence+Nouns.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DE014FAB3BF00148435 /* ANSentence+Nouns.m */; };
+		FAF01DE414FAB3ED00148435 /* ANProperNoun.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DE314FAB3ED00148435 /* ANProperNoun.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,12 @@
 		FAF01DD214FAADDD00148435 /* ANPunctuation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPunctuation.m; sourceTree = "<group>"; };
 		FAF01DD714FAAE0B00148435 /* ANShortWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANShortWord.h; sourceTree = "<group>"; };
 		FAF01DD814FAAE0B00148435 /* ANShortWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANShortWord.m; sourceTree = "<group>"; };
+		FAF01DDC14FAB33300148435 /* WordDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordDictionary.h; sourceTree = "<group>"; };
+		FAF01DDD14FAB33300148435 /* WordDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordDictionary.m; sourceTree = "<group>"; };
+		FAF01DDF14FAB3BF00148435 /* ANSentence+Nouns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ANSentence+Nouns.h"; sourceTree = "<group>"; };
+		FAF01DE014FAB3BF00148435 /* ANSentence+Nouns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ANSentence+Nouns.m"; sourceTree = "<group>"; };
+		FAF01DE214FAB3ED00148435 /* ANProperNoun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANProperNoun.h; sourceTree = "<group>"; };
+		FAF01DE314FAB3ED00148435 /* ANProperNoun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANProperNoun.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF01DDA14FAAE7900148435 /* Words */,
+				FAF01DDB14FAB31F00148435 /* Proper Nouns */,
 				FAF01DC814FAACB900148435 /* ANParagraph.h */,
 				FAF01DC914FAACB900148435 /* ANParagraph.m */,
 				FAF01DCB14FAAD1D00148435 /* ANSentence.h */,
@@ -141,6 +151,19 @@
 				FAF01DD214FAADDD00148435 /* ANPunctuation.m */,
 			);
 			name = Words;
+			sourceTree = "<group>";
+		};
+		FAF01DDB14FAB31F00148435 /* Proper Nouns */ = {
+			isa = PBXGroup;
+			children = (
+				FAF01DDC14FAB33300148435 /* WordDictionary.h */,
+				FAF01DDD14FAB33300148435 /* WordDictionary.m */,
+				FAF01DDF14FAB3BF00148435 /* ANSentence+Nouns.h */,
+				FAF01DE014FAB3BF00148435 /* ANSentence+Nouns.m */,
+				FAF01DE214FAB3ED00148435 /* ANProperNoun.h */,
+				FAF01DE314FAB3ED00148435 /* ANProperNoun.m */,
+			);
+			name = "Proper Nouns";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +236,9 @@
 				FAF01DD014FAAD4400148435 /* ANWord.m in Sources */,
 				FAF01DD314FAADDD00148435 /* ANPunctuation.m in Sources */,
 				FAF01DD914FAAE0B00148435 /* ANShortWord.m in Sources */,
+				FAF01DDE14FAB33300148435 /* WordDictionary.m in Sources */,
+				FAF01DE114FAB3BF00148435 /* ANSentence+Nouns.m in Sources */,
+				FAF01DE414FAB3ED00148435 /* ANProperNoun.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
