@@ -13,6 +13,11 @@
 		FAF01DBB14FAA77000148435 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAF01DB914FAA77000148435 /* Credits.rtf */; };
 		FAF01DBE14FAA77000148435 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DBD14FAA77000148435 /* ANAppDelegate.m */; };
 		FAF01DC114FAA77100148435 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF01DBF14FAA77100148435 /* MainMenu.xib */; };
+		FAF01DCA14FAACB900148435 /* ANParagraph.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DC914FAACB900148435 /* ANParagraph.m */; };
+		FAF01DCD14FAAD1D00148435 /* ANSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DCC14FAAD1D00148435 /* ANSentence.m */; };
+		FAF01DD014FAAD4400148435 /* ANWord.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DCF14FAAD4400148435 /* ANWord.m */; };
+		FAF01DD314FAADDD00148435 /* ANPunctuation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DD214FAADDD00148435 /* ANPunctuation.m */; };
+		FAF01DD914FAAE0B00148435 /* ANShortWord.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DD814FAAE0B00148435 /* ANShortWord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +26,24 @@
 		FAF01DAD14FAA77000148435 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FAF01DAE14FAA77000148435 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FAF01DAF14FAA77000148435 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FAF01DB214FAA77000148435 /* ProperNouns-Info.plist */ = {isa = PBXFileReference; path = "ProperNouns-Info.plist"; sourceTree = "<group>"; };
+		FAF01DB214FAA77000148435 /* ProperNouns-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProperNouns-Info.plist"; sourceTree = "<group>"; };
 		FAF01DB414FAA77000148435 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAF01DB614FAA77000148435 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FAF01DB814FAA77000148435 /* ProperNouns-Prefix.pch */ = {isa = PBXFileReference; path = "ProperNouns-Prefix.pch"; sourceTree = "<group>"; };
+		FAF01DB814FAA77000148435 /* ProperNouns-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProperNouns-Prefix.pch"; sourceTree = "<group>"; };
 		FAF01DBA14FAA77000148435 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FAF01DBC14FAA77000148435 /* ANAppDelegate.h */ = {isa = PBXFileReference; path = ANAppDelegate.h; sourceTree = "<group>"; };
+		FAF01DBC14FAA77000148435 /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
 		FAF01DBD14FAA77000148435 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FAF01DC014FAA77100148435 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FAF01DC814FAACB900148435 /* ANParagraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANParagraph.h; sourceTree = "<group>"; };
+		FAF01DC914FAACB900148435 /* ANParagraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANParagraph.m; sourceTree = "<group>"; };
+		FAF01DCB14FAAD1D00148435 /* ANSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSentence.h; sourceTree = "<group>"; };
+		FAF01DCC14FAAD1D00148435 /* ANSentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSentence.m; sourceTree = "<group>"; };
+		FAF01DCE14FAAD4400148435 /* ANWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANWord.h; sourceTree = "<group>"; };
+		FAF01DCF14FAAD4400148435 /* ANWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANWord.m; sourceTree = "<group>"; };
+		FAF01DD114FAADDD00148435 /* ANPunctuation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANPunctuation.h; sourceTree = "<group>"; };
+		FAF01DD214FAADDD00148435 /* ANPunctuation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPunctuation.m; sourceTree = "<group>"; };
+		FAF01DD714FAAE0B00148435 /* ANShortWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANShortWord.h; sourceTree = "<group>"; };
+		FAF01DD814FAAE0B00148435 /* ANShortWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANShortWord.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +97,7 @@
 		FAF01DB014FAA77000148435 /* ProperNouns */ = {
 			isa = PBXGroup;
 			children = (
+				FAF01DC714FAAC5600148435 /* Paragraph */,
 				FAF01DBC14FAA77000148435 /* ANAppDelegate.h */,
 				FAF01DBD14FAA77000148435 /* ANAppDelegate.m */,
 				FAF01DBF14FAA77100148435 /* MainMenu.xib */,
@@ -100,6 +116,31 @@
 				FAF01DB914FAA77000148435 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF01DC714FAAC5600148435 /* Paragraph */ = {
+			isa = PBXGroup;
+			children = (
+				FAF01DDA14FAAE7900148435 /* Words */,
+				FAF01DC814FAACB900148435 /* ANParagraph.h */,
+				FAF01DC914FAACB900148435 /* ANParagraph.m */,
+				FAF01DCB14FAAD1D00148435 /* ANSentence.h */,
+				FAF01DCC14FAAD1D00148435 /* ANSentence.m */,
+			);
+			name = Paragraph;
+			sourceTree = "<group>";
+		};
+		FAF01DDA14FAAE7900148435 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				FAF01DCE14FAAD4400148435 /* ANWord.h */,
+				FAF01DCF14FAAD4400148435 /* ANWord.m */,
+				FAF01DD714FAAE0B00148435 /* ANShortWord.h */,
+				FAF01DD814FAAE0B00148435 /* ANShortWord.m */,
+				FAF01DD114FAADDD00148435 /* ANPunctuation.h */,
+				FAF01DD214FAADDD00148435 /* ANPunctuation.m */,
+			);
+			name = Words;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +208,11 @@
 			files = (
 				FAF01DB714FAA77000148435 /* main.m in Sources */,
 				FAF01DBE14FAA77000148435 /* ANAppDelegate.m in Sources */,
+				FAF01DCA14FAACB900148435 /* ANParagraph.m in Sources */,
+				FAF01DCD14FAAD1D00148435 /* ANSentence.m in Sources */,
+				FAF01DD014FAAD4400148435 /* ANWord.m in Sources */,
+				FAF01DD314FAADDD00148435 /* ANPunctuation.m in Sources */,
+				FAF01DD914FAAE0B00148435 /* ANShortWord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
