@@ -20,5 +20,6 @@
 - (BOOL)isCapitalized;
 
 + (ANWord *)wordWithString:(NSString *)string;
++ (BOOL)isWordNamePrefix:(NSString *)word;
 
 @end

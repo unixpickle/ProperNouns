@@ -17,5 +17,6 @@
 
 - (id)initWithSentences:(NSArray *)array;
 - (id)initWithString:(NSString *)paragraph;
+- (NSString *)stringValue;
 
 @end

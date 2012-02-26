@@ -14,8 +14,13 @@
 
 @synthesize word;
 
++ (BOOL)isWordNamePrefix:(NSString *)word {
+    NSArray * prefixes = [NSArray arrayWithObjects:@"Mr.", @"Dr.", @"Mrs.", @"Ms.", nil];
+    return [prefixes containsObject:word];
+}
+
 + (ANWord *)wordWithString:(NSString *)string {
-    NSArray * array = [NSArray arrayWithObjects:@"in", "the", @"of", nil];
+    NSArray * array = [NSArray arrayWithObjects:@"in", @"the", @"of", nil];
     if ([string length] == 1) {
         unichar theChar = [string characterAtIndex:0];
         if ([ANPunctuation isPunctuationCharacter:theChar]) {
@@ -46,6 +51,7 @@
 - (BOOL)isCapitalized {
     if ([self isPunctuation]) return NO;
     if ([self isSignificant]) {
+        if ([word isEqualToString:@"I"]) return NO; // special case
         if ([word length] > 0) {
             if (isupper([word characterAtIndex:0])) return YES;
         }

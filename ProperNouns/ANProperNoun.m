@@ -40,7 +40,7 @@
 }
 
 - (NSString *)word {
-    return [self stringValue];
+    return [NSString stringWithFormat:@"*%@*", [self stringValue]];
 }
 
 @end

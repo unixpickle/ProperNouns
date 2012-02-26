@@ -33,7 +33,7 @@
             if ([token length] == 0) continue;
             lastChar = [token characterAtIndex:([token length] - 1)];
             
-            if ([ANPunctuation isPunctuationCharacter:lastChar]) {
+            if ([ANPunctuation isPunctuationCharacter:lastChar] && ![ANWord isWordNamePrefix:token]) {
                 NSString * puncWord = [NSString stringWithFormat:@"%C", lastChar];
                 NSString * word = [token substringWithRange:NSMakeRange(0, [token length] - 1)];
                 mainToken = [ANWord wordWithString:word];
@@ -46,6 +46,9 @@
                     suffixToken = [[ANPunctuation alloc] initWithWord:puncWord];
                     [mSentence addObject:suffixToken];
                 }
+            } else {
+                mainToken = [ANWord wordWithString:token];
+                [mSentence addObject:mainToken];
             }
         }
         
@@ -57,6 +60,20 @@
         sentences = [mSentences copy];
     }
     return self;
+}
+
+- (NSString *)stringValue {
+    NSMutableString * mString = [NSMutableString string];
+    
+    for (NSUInteger i = 0; i < [sentences count]; i++) {
+        ANSentence * sentence = [sentences objectAtIndex:i];
+        [mString appendString:[sentence stringValue]];
+        if (i + 1 < [sentences count]) {
+            [mString appendString:@"  "];
+        }
+    }
+    
+    return [mString copy];
 }
 
 @end

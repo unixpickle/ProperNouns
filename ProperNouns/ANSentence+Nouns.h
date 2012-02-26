@@ -8,9 +8,11 @@
 
 #import "ANSentence.h"
 #import "ANProperNoun.h"
+#import "NameChecker.h"
 
 @interface ANSentence (Nouns)
 
-- (NSArray *)properNouns;
+- (NSArray *)properNouns:(id<NameChecker>)checker;
+- (ANSentence *)sentenceWithProperNouns:(id<NameChecker>)checker;
 
 @end

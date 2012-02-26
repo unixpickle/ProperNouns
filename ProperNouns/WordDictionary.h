@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NameChecker.h"
 
-@interface WordDictionary : NSObject {
+@interface WordDictionary : NSObject <NameChecker> {
     NSArray * words;
 }
 
 - (id)initWithFile:(NSString *)aFile;
-- (BOOL)includesWord;
+- (BOOL)includesWord:(NSString *)aWord;
 
 @end

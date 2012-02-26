@@ -17,5 +17,6 @@
 @property (readonly) NSArray * words;
 
 - (id)initWithWords:(NSArray *)array;
+- (NSString *)stringValue;
 
 @end

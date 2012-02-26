@@ -21,6 +21,8 @@
 		FAF01DDE14FAB33300148435 /* WordDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DDD14FAB33300148435 /* WordDictionary.m */; };
 		FAF01DE114FAB3BF00148435 /* ANSentence+Nouns.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DE014FAB3BF00148435 /* ANSentence+Nouns.m */; };
 		FAF01DE414FAB3ED00148435 /* ANProperNoun.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DE314FAB3ED00148435 /* ANProperNoun.m */; };
+		FAF01DE714FABBD700148435 /* ANParagraph+Nouns.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DE614FABBD700148435 /* ANParagraph+Nouns.m */; };
+		FAF01DEA14FAC0C900148435 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAF01DE914FAC0C900148435 /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,10 @@
 		FAF01DE014FAB3BF00148435 /* ANSentence+Nouns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ANSentence+Nouns.m"; sourceTree = "<group>"; };
 		FAF01DE214FAB3ED00148435 /* ANProperNoun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANProperNoun.h; sourceTree = "<group>"; };
 		FAF01DE314FAB3ED00148435 /* ANProperNoun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANProperNoun.m; sourceTree = "<group>"; };
+		FAF01DE514FABBD700148435 /* ANParagraph+Nouns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ANParagraph+Nouns.h"; sourceTree = "<group>"; };
+		FAF01DE614FABBD700148435 /* ANParagraph+Nouns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ANParagraph+Nouns.m"; sourceTree = "<group>"; };
+		FAF01DE914FAC0C900148435 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
+		FAF01DEB14FAC0D800148435 /* NameChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameChecker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 		FAF01DB114FAA77000148435 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAF01DE914FAC0C900148435 /* dictionary.txt */,
 				FAF01DB214FAA77000148435 /* ProperNouns-Info.plist */,
 				FAF01DB314FAA77000148435 /* InfoPlist.strings */,
 				FAF01DB614FAA77000148435 /* main.m */,
@@ -156,14 +163,25 @@
 		FAF01DDB14FAB31F00148435 /* Proper Nouns */ = {
 			isa = PBXGroup;
 			children = (
-				FAF01DDC14FAB33300148435 /* WordDictionary.h */,
-				FAF01DDD14FAB33300148435 /* WordDictionary.m */,
-				FAF01DDF14FAB3BF00148435 /* ANSentence+Nouns.h */,
-				FAF01DE014FAB3BF00148435 /* ANSentence+Nouns.m */,
+				FAF01DE814FAC04300148435 /* Names */,
 				FAF01DE214FAB3ED00148435 /* ANProperNoun.h */,
 				FAF01DE314FAB3ED00148435 /* ANProperNoun.m */,
+				FAF01DDF14FAB3BF00148435 /* ANSentence+Nouns.h */,
+				FAF01DE014FAB3BF00148435 /* ANSentence+Nouns.m */,
+				FAF01DE514FABBD700148435 /* ANParagraph+Nouns.h */,
+				FAF01DE614FABBD700148435 /* ANParagraph+Nouns.m */,
 			);
 			name = "Proper Nouns";
+			sourceTree = "<group>";
+		};
+		FAF01DE814FAC04300148435 /* Names */ = {
+			isa = PBXGroup;
+			children = (
+				FAF01DEB14FAC0D800148435 /* NameChecker.h */,
+				FAF01DDC14FAB33300148435 /* WordDictionary.h */,
+				FAF01DDD14FAB33300148435 /* WordDictionary.m */,
+			);
+			name = Names;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +237,7 @@
 				FAF01DB514FAA77000148435 /* InfoPlist.strings in Resources */,
 				FAF01DBB14FAA77000148435 /* Credits.rtf in Resources */,
 				FAF01DC114FAA77100148435 /* MainMenu.xib in Resources */,
+				FAF01DEA14FAC0C900148435 /* dictionary.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +258,7 @@
 				FAF01DDE14FAB33300148435 /* WordDictionary.m in Sources */,
 				FAF01DE114FAB3BF00148435 /* ANSentence+Nouns.m in Sources */,
 				FAF01DE414FAB3ED00148435 /* ANProperNoun.m in Sources */,
+				FAF01DE714FABBD700148435 /* ANParagraph+Nouns.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANParagraph+Nouns.h"
+#import "WordDictionary.h"
 
 @interface ANAppDelegate : NSObject <NSApplicationDelegate>
 

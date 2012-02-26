@@ -19,4 +19,21 @@
     return self;
 }
 
+- (NSString *)stringValue {
+    NSMutableString * mString = [NSMutableString string];
+    
+    for (NSUInteger i = 0; i < [words count]; i++) {
+        ANWord * word = [words objectAtIndex:i];
+        
+        if (![word isPunctuation] && i != 0) {
+            [mString appendString:@" "];
+        }
+        
+        [mString appendString:word.word];
+    }
+    
+    [mString appendString:@"."];
+    return [mString copy];
+}
+
 @end
