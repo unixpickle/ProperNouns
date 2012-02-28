@@ -1,0 +1,23 @@
+#!/usr/bin/ruby
+
+require "LineDictionary"
+
+output = File.new('output.txt', 'w')
+
+puts "Reading names..."
+names = LineDictionary.new('names.txt')
+
+puts "Reading US dictionary..."
+dictionary = LineDictionary.new('US.dic')
+
+puts "Word-by-word writing"
+count = 0
+dictionary.words.each { |word|
+	if !names.include? word
+		output.write word + "\n"
+	end
+	count += 1
+	puts "#{count} words." if count % 10000 == 0
+}
+
+output.close
