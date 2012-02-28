@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA73716214FC75E200E7C7FD /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA73716114FC75E200E7C7FD /* dictionary.txt */; };
 		FAF01DAB14FAA77000148435 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF01DAA14FAA77000148435 /* Cocoa.framework */; };
 		FAF01DB514FAA77000148435 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF01DB314FAA77000148435 /* InfoPlist.strings */; };
 		FAF01DB714FAA77000148435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DB614FAA77000148435 /* main.m */; };
@@ -22,10 +23,10 @@
 		FAF01DE114FAB3BF00148435 /* ANSentence+Nouns.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DE014FAB3BF00148435 /* ANSentence+Nouns.m */; };
 		FAF01DE414FAB3ED00148435 /* ANProperNoun.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DE314FAB3ED00148435 /* ANProperNoun.m */; };
 		FAF01DE714FABBD700148435 /* ANParagraph+Nouns.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF01DE614FABBD700148435 /* ANParagraph+Nouns.m */; };
-		FAF01DEA14FAC0C900148435 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAF01DE914FAC0C900148435 /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA73716114FC75E200E7C7FD /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 		FAF01DA614FAA77000148435 /* ProperNouns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProperNouns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF01DAA14FAA77000148435 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FAF01DAD14FAA77000148435 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -57,7 +58,6 @@
 		FAF01DE314FAB3ED00148435 /* ANProperNoun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANProperNoun.m; sourceTree = "<group>"; };
 		FAF01DE514FABBD700148435 /* ANParagraph+Nouns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ANParagraph+Nouns.h"; sourceTree = "<group>"; };
 		FAF01DE614FABBD700148435 /* ANParagraph+Nouns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ANParagraph+Nouns.m"; sourceTree = "<group>"; };
-		FAF01DE914FAC0C900148435 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 		FAF01DEB14FAC0D800148435 /* NameChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameChecker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,7 +124,7 @@
 		FAF01DB114FAA77000148435 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FAF01DE914FAC0C900148435 /* dictionary.txt */,
+				FA73716114FC75E200E7C7FD /* dictionary.txt */,
 				FAF01DB214FAA77000148435 /* ProperNouns-Info.plist */,
 				FAF01DB314FAA77000148435 /* InfoPlist.strings */,
 				FAF01DB614FAA77000148435 /* main.m */,
@@ -237,7 +237,7 @@
 				FAF01DB514FAA77000148435 /* InfoPlist.strings in Resources */,
 				FAF01DBB14FAA77000148435 /* Credits.rtf in Resources */,
 				FAF01DC114FAA77100148435 /* MainMenu.xib in Resources */,
-				FAF01DEA14FAC0C900148435 /* dictionary.txt in Resources */,
+				FA73716214FC75E200E7C7FD /* dictionary.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +380,7 @@
 				FAF01DC614FAA77100148435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
